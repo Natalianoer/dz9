@@ -26,6 +26,6 @@ button:hover {
   cursor: pointer;
   background-color: purple;
 }
-#player, #dz-root {
-  margin: 0 auto;
+#dz-root {
+  margin-left: 35%;
 }
