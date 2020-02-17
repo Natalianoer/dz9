@@ -5,26 +5,25 @@
     <title>Плеер</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+     <script src="https://e-cdns-files.dzcdn.net/js/min/dz.js"></script>
   </head>
   <body>
     <div class="container">
       <h1>Плеер Deezer</h1>
       <form  action="" method="get">
-        <input id="inputSearchName" type="text" name="" value="" placeholder="Введите название песни">
+        <input id="inputSearchName" type="text" name="" value="" placeholder="Введите исполнителя">
+        <input id="inputSearchTrack" type="text" name="" value="" placeholder="Введите песню">
         <button id="searchBtn" type="button" name="button">Search</button>
       </form>
     </div>
-    <div id="player"></div>
     <div id="dz-root"></div>
- <script src="https://e-cdns-files.dzcdn.net/js/min/dz.js"></script>
-  <script>
-    document.addEventListener('DOMContentLoaded', DZ.init);
-    //document.addEventListener('DOMContentLoaded', initplayer);
-      DZ.init({
-        appId  : '395144',
-        channelUrl : 'https://cors-anywhere.herokuapp.com/https://api.deezer.com/search'
-      });
-  </script>
+    <script>
+        DZ.init({
+            appId  : '395144',
+            channelUrl : 'http://mypleerNoer.com/channel.html'
+        });
+    </script>
     <script src="script.js"></script>
   </body>
 </html>
+
